@@ -22,5 +22,6 @@
 #define __HYBRID_H__
 
 extern void torbounce_aes_encrypt(unsigned char *key, size_t key_len, unsigned char *out, unsigned char *in, size_t in_len);
+extern void torbounce_encrypt_chunk(RSA *rsa, unsigned char *in, size_t in_len, unsigned char **out, size_t *out_len);
 
 #endif
